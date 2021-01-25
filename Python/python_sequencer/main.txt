@@ -1,0 +1,68 @@
+import random
+class type:
+  def __init__(self, action, price):
+    self.action = action
+    self.price = price
+
+list = [type("Moving to enemy", 0),type("Fire at enemy", 0),type("Moving to cover", 0),type("Loading the gun", 0)]
+
+random.seed()
+distanceToEnemy = random.randint(0,100)
+distanceToCover = random.randint(0,100)
+loaded = random.randint(0,2)
+if(loaded == 1):
+    gunLoaded = True
+else:
+    gunLoaded = False
+if(distanceToCover < 50):
+    coverPoss = True
+else:
+    coverPoss = False
+
+if(distanceToCover == 0):
+    isCover = True
+else:
+    isCover = False
+
+#decising moveToEnemy:
+if(not gunLoaded):
+    list[0].price = distanceToEnemy - 100
+else:
+    list[0].price = distanceToEnemy
+
+#decising fireAtEnemy
+if(distanceToEnemy < 50):
+    list[1].price = 75
+if(not coverPoss):
+    list[1].price += 50
+if(not gunLoaded):
+    list[1].price += -125
+
+#decising moveToCover
+if(not isCover):
+    list[2].price = 50
+if(distanceToCover < 50):
+    list[2].price += 50
+
+#decising load
+if(not gunLoaded):
+    list[3].price = 75
+if(isCover):
+    list[3].price += 50
+if(gunLoaded):
+    list[3].price += -125
+
+list.sort(key=lambda x: x.price, reverse=True)
+
+print("distanceToEnemy: ", distanceToEnemy)
+print("distanceToCover: ", distanceToCover)
+print("gunLoaded: ", gunLoaded)
+
+print("moveToEnemy: ", list[0].price)
+print("fireAtEnemy: ", list[1].price)
+print("moveToCover: ", list[2].price)
+print("load: ", list[3].price)
+for obj in list:
+    print( obj.action, obj.price, sep =' ' )
+
+print("Action taken: ",list[0].action)
