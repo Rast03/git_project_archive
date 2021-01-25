@@ -1,2 +1,2 @@
 # git_project_archive
-archived projects I used to work on
+Code Snippets from projects I used to work on
