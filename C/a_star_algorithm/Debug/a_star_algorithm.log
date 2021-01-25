@@ -1,0 +1,4 @@
+﻿  a_star_algorithm.cpp
+C:\Users\Upptacka\source\repos\a_star_algorithm\a_star_algorithm.cpp(40,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Upptacka\source\repos\a_star_algorithm\a_star_algorithm.cpp(192): warning C4715: 'aStar': not all control paths return a value
+  a_star_algorithm.vcxproj -> C:\Users\Upptacka\source\repos\a_star_algorithm\Debug\a_star_algorithm.exe
