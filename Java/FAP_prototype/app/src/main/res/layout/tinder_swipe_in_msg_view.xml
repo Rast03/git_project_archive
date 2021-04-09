@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="375dp"
+    android:layout_height="450dp"
+    android:orientation="vertical">
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="32sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_margin="40dp"-->
+    <!--android:textColor="@color/fapPrimaryDark"-->
+    <!--android:text="@string/yes_button"/>-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="40dp"
+        app:srcCompat="@drawable/stampyes" />
+
+</LinearLayout>

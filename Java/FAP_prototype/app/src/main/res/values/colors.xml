@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="fapAccent">#ec407a</color>
+    <color name="fapPrimary">#43a047</color>
+    <color name="fapPrimaryDark">#00701a</color>
+    <color name="fapPrimaryLight">#76d275</color>
+</resources>
